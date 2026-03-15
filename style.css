@@ -39,6 +39,7 @@ header {
   height: 50px;
 }
 
+/* Navigation centered */
 header nav {
   flex: 1;
   text-align: center;
@@ -56,9 +57,9 @@ header nav a:hover {
   color: var(--highlight);
 }
 
-/* Theme Toggle Button */
+/* Theme Toggle Button (top right) */
 #theme-toggle {
-  margin-left: auto; /* pushes it to far right */
+  margin-left: auto; /* ensures far right placement */
   background-color: var(--primary);
   color: #fff;
   border: none;
