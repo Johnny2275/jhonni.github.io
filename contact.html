@@ -52,8 +52,13 @@
     <p>💼 LinkedIn: <a href="https://linkedin.com/in/john-nwafor-359a31131">JOHN NWAFOR</a></p>
   </section>
   
-  <footer>
-    <p>&copy; 2026 JHONNI SPACE ❤️.</p>
-  </footer>
+ <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 </body>
 </html>
