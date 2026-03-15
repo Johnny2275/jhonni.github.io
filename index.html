@@ -116,5 +116,40 @@
     </div>
   </div>
 </footer>
+  <script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const sunIcon = document.getElementById('sun-icon');
+  const moonIcon = document.getElementById('moon-icon');
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem('site-theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    if (savedTheme === 'arsenal') {
+      sunIcon.style.display = "none";
+      moonIcon.style.display = "block";
+    } else {
+      sunIcon.style.display = "block";
+      moonIcon.style.display = "none";
+    }
+  }
+
+  // Toggle theme
+  toggleBtn.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    if (currentTheme === 'arsenal') {
+      document.documentElement.setAttribute('data-theme', 'default');
+      localStorage.setItem('site-theme', 'default');
+      sunIcon.style.display = "block";
+      moonIcon.style.display = "none";
+    } else {
+      document.documentElement.setAttribute('data-theme', 'arsenal');
+      localStorage.setItem('site-theme', 'arsenal');
+      sunIcon.style.display = "none";
+      moonIcon.style.display = "block";
+    }
+  });
+</script>
+
 </body>
 </html>
