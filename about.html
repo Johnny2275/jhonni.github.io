@@ -1,37 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="favicon.png">
-
   <meta charset="UTF-8">
   <meta name="description" content="Learn more about John, his background, skills, and interests.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About John</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; line-height:1.6; }
-    header { background:#2c3e50; color:#fff; padding:20px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    section { padding:40px; max-width:900px; margin:auto; }
-    footer { background:#2c3e50; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-  </style>
 </head>
 <body>
   <header>
-    <header>
-  <div style="display:flex; align-items:center; justify-content:space-between; padding:10px 20px;">
-    <img src="logo1.png" alt="John's Logo" style="height:50px;">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</header>
-
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:10px 20px;">
+      <img src="logo1.png" alt="John's Logo" style="height:50px;">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section>
@@ -45,15 +33,16 @@
       <li>Learning new technologies and frameworks</li>
       <li>Sharing knowledge through projects and writing</li>
     </ul>
-    <p>Beyond tech, I enjoy connecting with people, collaborating on creative ideas, and continuously learning.</p
+    <p>Beyond tech, I enjoy connecting with people, collaborating on creative ideas, and continuously learning.</p>
   </section>
+
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
 </body>
-   <div id="footer"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
-</script>
 </html>
