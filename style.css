@@ -240,4 +240,31 @@ footer {
   color: #ffd700; /* gold hover effect */
 }
 
+footer {
+  background-color: #db0000; /* Arsenal red */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffd700; /* gold hover effect */
+}
+
+
 
