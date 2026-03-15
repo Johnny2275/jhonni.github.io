@@ -142,6 +142,71 @@ footer {
   display: inline-block;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+// arsenal theme
+/* General site background */
+body {
+  background-color: #f9f9f9; /* light neutral */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header navigation bar */
+header {
+  background-color: #db0000; /* Arsenal red */
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 50px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ffd700; /* gold hover effect */
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #2c3e50; /* deep navy for contrast */
+  margin-bottom: 10px;
+}
+
+/* Hero section */
+.hero-banner {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Arsenal-themed button */
+.hero-banner-button {
+  background-color: #db0000; /* Arsenal red */
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-banner-button:hover {
+  background-color: #a80000;
+  transform: scale(1.05);
+}
+
 
 .hero-banner2-button:hover {
   background-color: #a80000;
