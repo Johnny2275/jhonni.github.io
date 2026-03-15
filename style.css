@@ -16,18 +16,32 @@ body {
   --highlight: #e67e22; /* Orange accent */
 }
 
+:root[data-theme="arsenal"] {
+  --primary: #db0000;   /* Arsenal red */
+  --secondary: #a80000; /* Darker Arsenal red */
+  --highlight: #ffd700; /* Gold accent */
+}
+
 /* Header & Navigation */
 header {
   background: var(--primary);
   color: #fff;
-  padding: 20px;
+  padding: 10px 20px;
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header img {
+.logo {
   height: 50px;
+}
+
+header nav {
+  flex: 1;
+  text-align: center;
 }
 
 header nav a {
@@ -39,7 +53,33 @@ header nav a {
 }
 
 header nav a:hover {
-  color: var(--highlight); /* orange accent hover */
+  color: var(--highlight);
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  margin-left: auto; /* pushes it to far right */
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+  background-color: var(--secondary);
+  transform: scale(1.1);
+}
+
+#theme-toggle svg {
+  stroke: currentColor;
+  stroke-width: 2;
 }
 
 /* Headings */
@@ -77,9 +117,14 @@ section {
   margin-bottom: 40px;
 }
 
+.hero-image {
+  width: 100%;
+  max-width: 1200px;
+}
+
 /* Hero Banner Button */
-.hero-banner-button {
-  background-color: var(--secondary); /* accent blue */
+.hero-banner2-button {
+  background-color: var(--secondary);
   color: #fff;
   padding: 12px 24px;
   font-size: 1em;
@@ -91,7 +136,7 @@ section {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.hero-banner-button:hover {
+.hero-banner2-button:hover {
   background-color: var(--primary);
   transform: scale(1.05);
 }
@@ -150,7 +195,7 @@ button:hover {
 
 /* Footer */
 footer {
-  background-color: var(--primary); /* dark navy/charcoal */
+  background-color: var(--primary);
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -181,7 +226,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #ffd700; /* gold hover effect */
+  color: #ffd700;
 }
 
 /* Responsive tweaks */
@@ -197,41 +242,3 @@ footer {
     padding: 20px;
   }
 }
-
-/* switching themes */
-:root {
-  --primary: #2c3e50;   /* Dark navy */
-  --secondary: #2980b9; /* Accent blue */
-  --highlight: #e67e22; /* Orange accent */
-}
-
-:root[data-theme="arsenal"] {
-  --primary: #db0000;   /* Arsenal red */
-  --secondary: #a80000; /* Darker Arsenal red */
-  --highlight: #ffd700; /* Gold accent */
-}
-
-#theme-toggle {
-  background-color: var(--primary);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#theme-toggle:hover {
-  background-color: var(--secondary);
-  transform: scale(1.1);
-}
-
-#theme-toggle svg {
-  stroke: currentColor;
-  stroke-width: 2;
-}
-
