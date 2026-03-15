@@ -1,87 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-<link rel="icon" type="image/png" href="favicon.png">
-
   <meta charset="UTF-8">
   <meta name="description" content="John's personal portfolio showcasing projects, skills, and contact information.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jhonnie's Space</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; line-height:1.6; }
-    header { background:#2c3e50; color:#fff; padding:20px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    .hero { padding:60px; text-align:center; background:#ecf0f1; }
-    .hero h1 { font-size:2.5em; margin-bottom:10px; }
-    section { padding:40px; max-width:900px; margin:auto; }
-    .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { background:#f9f9f9; padding:20px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-    footer { background:#2c3e50; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-  </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <div style="display:flex; align-items:center; justify-content:space-between; padding:10px 20px;">
-    <img src="logo1.png" alt="John's Logo" style="height:50px;">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-<!-- toggle botton -->
-  <div class="header-container">
-    <img src="logo1.png" alt="John's Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button id="theme-toggle" aria-label="Toggle theme">
-      <!-- Sun icon (default) -->
-      <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-        <circle cx="12" cy="12" r="5"/>
-        <line x1="12" y1="1" x2="12" y2="3"/>
-        <line x1="12" y1="21" x2="12" y2="23"/>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-        <line x1="1" y1="12" x2="3" y2="12"/>
-        <line x1="21" y1="12" x2="23" y2="12"/>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-      </svg>
-
-      <!-- Moon icon (Arsenal theme) -->
-      <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="display:none;">
-        <path d="M21 12.79A9 9 0 0111.21 3a7 7 0 000 14A9 9 0 0021 12.79z"/>
-      </svg>
-    </button>
-  </div>
+    <div class="header-container">
+      <img src="logo1.png" alt="John's Logo" class="logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <!-- Theme toggle button -->
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <!-- Sun icon (default) -->
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon icon (Arsenal theme) -->
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="display:none;">
+          <path d="M21 12.79A9 9 0 0111.21 3a7 7 0 000 14A9 9 0 0021 12.79z"/>
+        </svg>
+      </button>
+    </div>
   </header>
-<div style="text-align:center;">
-  <img src="hero-banner2.png" alt="Jhonni Hero Banner" style="width:100%; max-width:1200px;">
-  <a href="projects.html" class="hero-banner2-button">View My Work</a>
 
-</div>
-<section style="text-align:center; padding:30px; background:#fdfdfd;">
-  <h2 style="font-size:1.8em; color:#2c3e50;">AI Automation & Digital Skills for African builders</h2>
-  <p style="font-size:1.2em; color:#555;">Simple tools | Arsenal die-hard | #Tech</p>
-</section>
+  <!-- Hero Banner -->
+  <div class="hero-banner">
+    <img src="hero-banner2.png" alt="Jhonni Hero Banner" style="width:100%; max-width:1200px;">
+    <a href="projects.html" class="hero-banner2-button">View My Work</a>
+  </div>
 
+  <!-- Intro Section -->
+  <section class="intro">
+    <h2>AI Automation & Digital Skills for African builders</h2>
+    <p>Simple tools | Arsenal die-hard | #Tech</p>
+  </section>
+
+  <!-- Hero Text -->
   <div class="hero">
     <h1>Hello, I’m John 👋</h1>
     <p>Web enthusiast & creator — building digital experiences with passion.</p>
   </div>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <p>I’m John, a creative builder exploring web technologies and design. This site is my space to share projects, ideas, and connect with others.</p>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="projects">
@@ -100,56 +86,60 @@
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <p>📧 Email: <a href="mailto:nwaforjohn02@gmail.com">nwaforjohn02@gmail.com</a></p>
     <p>🔗 Connect on <a href="https://github.com/Johnny2275">GitHub</a> or <a href="https://linkedin.com/in/john-nwafor-359a31131">LinkedIn</a>.</p>
   </section>
 
+  <!-- Footer -->
   <footer>
-  <div class="footer-content">
-    <p>© 2026 Jhonni. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://twitter.com/@deyoung166" target="_blank">Twitter</a>
-      <a href="https://linkedin.com/in/john-nwafor-359a31131" target="_blank">LinkedIn</a>
-      <a href="https://github.com/Johnny2275" target="_blank">GitHub</a>
+    <div class="footer-content">
+      <p>© 2026 Jhonni. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://twitter.com/@deyoung166" target="_blank">Twitter</a>
+        <a href="https://linkedin.com/in/john-nwafor-359a31131" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Johnny2275" target="_blank">GitHub</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+  <!-- Theme Toggle Script -->
   <script>
-  const toggleBtn = document.getElementById('theme-toggle');
-  const sunIcon = document.getElementById('sun-icon');
-  const moonIcon = document.getElementById('moon-icon');
+    const toggleBtn = document.getElementById('theme-toggle');
+    const sunIcon = document.getElementById('sun-icon');
+    const moonIcon = document.getElementById('moon-icon');
 
-  // Load saved theme
-  const savedTheme = localStorage.getItem('site-theme');
-  if (savedTheme) {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    if (savedTheme === 'arsenal') {
-      sunIcon.style.display = "none";
-      moonIcon.style.display = "block";
-    } else {
-      sunIcon.style.display = "block";
-      moonIcon.style.display = "none";
+    // Load saved theme
+    const savedTheme = localStorage.getItem('site-theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      if (savedTheme === 'arsenal') {
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "block";
+      } else {
+        sunIcon.style.display = "block";
+        moonIcon.style.display = "none";
+      }
     }
-  }
 
-  // Toggle theme
-  toggleBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === 'arsenal') {
-      document.documentElement.setAttribute('data-theme', 'default');
-      localStorage.setItem('site-theme', 'default');
-      sunIcon.style.display = "block";
-      moonIcon.style.display = "none";
-    } else {
-      document.documentElement.setAttribute('data-theme', 'arsenal');
-      localStorage.setItem('site-theme', 'arsenal');
-      sunIcon.style.display = "none";
-      moonIcon.style.display = "block";
-    }
-  });
-</script>
+    // Toggle theme
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      if (currentTheme === 'arsenal') {
+        document.documentElement.setAttribute('data-theme', 'default');
+        localStorage.setItem('site-theme', 'default');
+        sunIcon.style.display = "block";
+        moonIcon.style.display = "none";
+      } else {
+        document.documentElement.setAttribute('data-theme', 'arsenal');
+        localStorage.setItem('site-theme', 'arsenal');
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "block";
+      }
+    });
+  </script>
 
 </body>
 </html>
